@@ -12,7 +12,7 @@ model=LinearRegression()
 model.fit(x,y)
 y_pred=model.predict(x)
 
-print(f"Coefficent (Slope): {model.coef-[0]}")
+print(f"Coefficent (Slope): {model.coef_[0]}")
 print(f"Intercept: {model.intercept_}")
 plt.plot(x,y_pred,color='r',label="Linear Regression")
 plt.plot(x,y,color='b',label="Actual Data")
